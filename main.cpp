@@ -14,18 +14,26 @@ int main()
 	cin >> M;
 
 	// TODO: declare variables for student name, score, sum, average
+	string sName;
+	int score, sum, average;
 
 	for(int i=0; i<N; i++)
 	{
 		// TODO: read student name and initialize sum
+		cin >> sName;
+		sum = 0;
 
 		for (int j=0; j<M; j++)
 		{
 			// TODO: read each score and accumulate sum
+			cin >> score;
+			sum += score;
 		}
 
 		// TODO: calculate average and print name, sum, average
-	}
+		average = sum / M;
 
+		cout << sName << " " << sum << " " << average << endl;
+	}
 	return 0;
 }
